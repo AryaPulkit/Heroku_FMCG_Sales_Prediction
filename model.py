@@ -7,8 +7,6 @@ Created on Tue Mar 17 03:28:58 2020
 """
 
 import pandas as  pd
-import warnings
-warnings.filterwarnings("ignore",category=DeprecationWarning)
 
 train1=pd.read_csv("train1.csv")
 train1.drop(train1.columns[[0,4]], axis = 1, inplace = True)
